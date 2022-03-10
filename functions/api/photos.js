@@ -36,7 +36,7 @@ async function onRequest(request) {
     return new Response("OK", {headers: corsHeaders })
   }
 
-  if (request.method === "POST") {
+//  if (request.method === "POST") {
     return getImages(request)
   }
 
