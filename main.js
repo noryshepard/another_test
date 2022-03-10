@@ -1,3 +1,3 @@
-fetch('/api/photos', {
-  console.log();
-});
+fetch('api/photos')
+  .then(response => response.json())
+  .then(data => console.log(data));
