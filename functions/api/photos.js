@@ -33,10 +33,9 @@ const getImages = async request => {
 
 async function onRequest(request) {
   if (request.method === "OPTIONS") {
-    return new Response("OK", {headers: corsHeaders })
-  }
+    return new Response("OK", {headers: corsHeaders }) 
 
-//  if (request.method === "POST") {
+//  } if (request.method === "POST") {
     return getImages(request)
   }
 
